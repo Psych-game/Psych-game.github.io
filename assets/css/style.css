@@ -12,8 +12,9 @@
   --mycolor1: #292F36;
   --mycolor2: #0081A7;
   --mycolor3: #C3423F;
-  --mycolor4: #FEF5EF;
+  --mycolor4: #F8f8f8;
   --mycolor5: #FFCF00;
+  --mywhite: #fff;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -601,7 +602,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fff;
+  background-color: var(--mywhite);
 }
 
 .section-title {
@@ -648,7 +649,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fff;
+  background-color: var(--mywhite);
 }
 
 .section-title {
@@ -773,7 +774,7 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #fff;
+  background: var(--mywhite);
 }
 
 .services .icon-box .icon {
@@ -1204,7 +1205,7 @@ section {
 --------------------------------------------------------------*/
 .pricing .box {
   padding: 20px;
-  background: #fff;
+  background: var(--mywhite);
   text-align: center;
   border-radius: 5px;
   position: relative;
@@ -1992,10 +1993,10 @@ section {
 }
 
 #newsletter, #newsletter .footer-newsletter {
-  background: #fff;
+  background: var(--mywhite);
 }
 #newsletter .footer-newsletter form, #newsletter .footer-newsletter form * {
-  background: #fff;
+  background: var(--mywhite);
 }
 
 .contact .php-email-form {
@@ -2003,7 +2004,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fff !important;
+  background-color: var(--mywhite) !important;
 }
 
 .counts .counters span {
@@ -2011,4 +2012,8 @@ section {
 }
 .counts .counters p {
   color: var(--mycolor3);
+}
+
+.counts {
+  background-color: var(--mycolor4);
 }
