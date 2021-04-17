@@ -8,9 +8,17 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+:root {
+  --mycolor1: #292F36;
+  --mycolor2: #0081A7;
+  --mycolor3: #C3423F;
+  --mycolor4: #FEF5EF;
+  --mycolor5: #FFCF00;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-color: var(--mycolor4);
 }
 
 a {
@@ -71,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: var(--mycolor4);
 }
 
 #preloader:before {
@@ -227,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: var(--mycolor4);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
@@ -285,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: var(--mycolor4);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -329,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: var(--mycolor4);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -360,7 +368,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: var(--mycolor4);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -426,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 35px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 30px;
@@ -593,7 +601,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f5f5ff;
+  background-color: #fff;
 }
 
 .section-title {
@@ -640,7 +648,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f5f5ff;
+  background-color: #fff;
 }
 
 .section-title {
@@ -739,7 +747,7 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  background: linear-gradient(90deg, rgba(88, 70, 249, 0.5) 0%, rgba(123, 39, 216, 0.5) 100%), url("../img/counts-bg.png") center center no-repeat;
+  /*background: linear-gradient(90deg, rgba(88, 70, 249, 0.5) 0%, rgba(123, 39, 216, 0.5) 100%), url("../img/counts-bg.png") center center no-repeat;*/
   padding: 80px 0 60px 0;
 }
 
@@ -971,7 +979,7 @@ section {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: #fff;
+  background: var(--mycolor4);
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -987,7 +995,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: var(--mycolor4);
   opacity: 1;
   border: 1px solid #5846f9;
 }
@@ -1145,7 +1153,7 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: var(--mycolor4);
   opacity: 1;
   border: 1px solid #5846f9;
 }
@@ -1270,7 +1278,7 @@ section {
   display: inline-block;
   padding: 10px 35px;
   border-radius: 4px;
-  color: #fff;
+  color: var(--mycolor4);
   transition: none;
   font-size: 15px;
   font-weight: 400;
@@ -1331,7 +1339,7 @@ section {
 
 .faq .faq-list li {
   padding: 30px;
-  background: #fff;
+  background: var(--mycolor4);
   border-radius: 5px;
   position: relative;
 }
@@ -1402,7 +1410,7 @@ section {
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
-  background: #fff;
+  background: var(--mycolor4);
 }
 
 .contact .info-box i {
@@ -1429,7 +1437,7 @@ section {
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
-  background: #fff;
+  background: var(--mycolor4);
 }
 
 .contact .php-email-form .error-message {
@@ -1456,7 +1464,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: var(--mycolor4);
   text-align: center;
   padding: 15px;
 }
@@ -1670,7 +1678,7 @@ section {
 
 #footer .footer-newsletter form {
   margin-top: 30px;
-  background: #fff;
+  background: var(--mycolor4);
   padding: 6px 10px;
   position: relative;
   border-radius: 5px;
@@ -1775,7 +1783,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: var(--mycolor4);
 }
 
 .team .member {
@@ -1873,4 +1881,134 @@ section {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #010483;
+}
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background: #414c64;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: #fff;
+}
+
+.cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 25px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #ffc107;
+  color: #fff;
+}
+
+.cta .cta-btn:hover {
+  background: #ffc107;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#newsletter {
+  background: var(--mycolor4);
+  padding: 0 0 30px 0;
+  color: #47536e;
+  font-size: 14px;
+  background: #eff2f8;
+}
+
+#newsletter .footer-newsletter {
+  padding: 50px 0;
+  background: #eff2f8;
+  text-align: center;
+  font-size: 15px;
+}
+
+#newsletter .footer-newsletter h4 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  color: #47536e;
+}
+
+#newsletter .footer-newsletter form {
+  margin-top: 30px;
+  background: var(--mycolor4);
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+#newsletter .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#newsletter .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #5777ba;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#newsletter .footer-newsletter form input[type="submit"]:hover {
+  background: #415f9d;
+}
+
+#about .section-title h2 {
+  font-size: 36px;
+  text-align: center;
+}
+#about .section-title h2:after {
+  display: none;
+}
+
+#newsletter, #newsletter .footer-newsletter {
+  background: #fff;
+}
+#newsletter .footer-newsletter form, #newsletter .footer-newsletter form * {
+  background: #fff;
+}
+
+.contact .php-email-form {
+  background: #fcfcfc;
+}
+
+.section-bg {
+  background-color: #fff !important;
+}
+
+.counts .counters span {
+  color: var(--mycolor3);
+}
+.counts .counters p {
+  color: var(--mycolor3);
 }
