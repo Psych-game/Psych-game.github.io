@@ -2203,11 +2203,11 @@ section {
   font-size: 27px;
 }
 
-.contact .php-email-form button[type="submit"] {
+.contact .php-email-form button[type="submit"], #newsletter .footer-newsletter form input[type="submit"] {
   background-color: var(--mycolor2);
 }
 
-.contact .php-email-form button[type="submit"]:hover {
+.contact .php-email-form button[type="submit"]:hover, #newsletter .footer-newsletter form input[type="submit"]:hover {
   background-color: var(--mycolor3);
 }
 
