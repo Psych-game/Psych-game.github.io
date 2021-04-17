@@ -13,12 +13,12 @@
   --mycolor2: #0081A7;
   --mycolor3: #C3423F;
   --mycolor4: #F8f8f8;
-  --mycolor5: #FFCF00;
+  --mycolor5: 255, 207, 0;
   --mywhite: #fff;
 }
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: var(--mycolor1);
   background-color: var(--mycolor4);
 }
 
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5846f9;
+  background: var(--mycolor2);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #7b27d8;
+  background: var(--mycolor3);
   color: #fff;
 }
 
@@ -626,7 +626,7 @@ section {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #1acc8d;
+  background: var(--mycolor2);
   margin: 4px 10px;
 }
 
@@ -637,7 +637,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #010483;
+  color: var(--mycolor1);
 }
 
 /*--------------------------------------------------------------
@@ -766,6 +766,7 @@ section {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.8);
 }
+
 
 /*--------------------------------------------------------------
 # Services
@@ -1044,7 +1045,7 @@ section {
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #5846f9;
+  background: var(--mycolor2);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1587,7 +1588,7 @@ section {
 
 /*--------------------------------------------------------------
 # Footer
---------------------------------------------------------------*/
+--------------------------------------------------------------
 #footer {
   color: #fff;
   font-size: 14px;
@@ -1746,6 +1747,162 @@ section {
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   text-decoration: none;
+}
+*/
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: var(--mycolor2);
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 15px;
+  background: #010246;
+  color: #fff;
+  border-top: 4px solid #1acc8d;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #1acc8d;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: rgb(var(--mycolor5));
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: rgb(var(--mycolor5));
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px 6px 15px;
+  position: relative;
+  border-radius: 50px;
+}
+
+#footer .footer-top .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: var(--mycolor3);
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
+  background: rgb(var(--mycolor5));
+  color: var(--mycolor1);
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  #footer .footer-top .footer-info {
+    margin: -20px 0 30px 0;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1984,14 +2141,6 @@ section {
   background: #415f9d;
 }
 
-#about .section-title h2 {
-  font-size: 36px;
-  text-align: center;
-}
-#about .section-title h2:after {
-  display: none;
-}
-
 #newsletter, #newsletter .footer-newsletter {
   background: var(--mywhite);
 }
@@ -2016,4 +2165,80 @@ section {
 
 .counts {
   background-color: var(--mycolor4);
+}
+
+#hero::before {
+  background-color: var(--mycolor2);
+}
+#header.header-scrolled {
+  background: var(--mycolor2);
+}
+#hero .btn-get-started {
+  background-color: var(--mycolor3);
+}
+#hero .btn-get-started:hover {
+  background-color: rgb(var(--mycolor5));
+}
+
+#about .section-title h2, #who-are-we .section-title h2 {
+  font-size: 36px;
+  text-align: center;
+  color: var(--mycolor1);
+}
+#about .section-title h2:after, #who-are-we .section-title h2:after {
+  display: none;
+}
+.section-title h2 {
+  font-size: 36px !important;
+  text-align: center;
+  color: var(--mycolor1) !important;
+}
+.section-title h2:after {
+  display: none;
+}
+.section-title p {
+  color: var(--mycolor3);
+  text-align: center;
+  padding-top: 40.5px;
+  font-size: 27px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background-color: var(--mycolor2);
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background-color: var(--mycolor3);
+}
+
+.details .content h3 {
+  color: var(--mycolor1);
+}
+.pricing h3 {
+  font-size: 22px;
+}
+.pricing h4 {
+  color: var(--mycolor2);
+}
+.pricing .box .btn-buy {
+  background: var(--mycolor2);
+}
+.pricing .box:hover h3, .pricing .box:hover .btn-buy {
+  background: var(--mycolor3);
+  color: var(--mycolor4);
+}
+.pricing .featured h3 {
+  background: var(--mycolor);
+  color: var(--mycolor4);
+}
+.pricing .box i {
+  color: rgb(var(--mycolor5));
+}
+
+
+.portfolio .portfolio-wrap::before {
+  background: rgba(var(--mycolor5), 0.8);
+}
+#portfolio-flters li.filter-active {
+  background: rgb(var(--mycolor5)) !important;
 }
